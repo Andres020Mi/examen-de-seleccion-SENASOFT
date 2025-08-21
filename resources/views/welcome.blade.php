@@ -117,71 +117,62 @@
             <div class="flex flex-col justify-between p-4 w-80 bg-base-100 text-base-content h-full">
                 <!-- Parte superior: Logo -->
                 <div class="mb-4">
-                    <h1 class="text-2xl font-bold text-base-content">Software Agropecuario</h1>
+                    <h1 class="text-2xl font-bold text-base-content">SoftSemi</h1>
                 </div>
                 <!-- Navegación con scroll -->
                 <div class="flex-1 overflow-y-auto space-y-4 pr-1">
                     <ul class="space-y-1">
-                        <li><span class="menu-title">Diarios Produccion</span></li>
+                        <li><span class="menu-title">Gestion de semilleros y proyectos</span></li>
                         <li>
                             <a class="btn btn-ghost justify-start w-full text-left" href="{{route('modulos.semilleros.index')}}">
                                 @include('svg.chemical')
                                 Semilleros
                             </a>
                         </li>
-                        <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
+
+                          <li>
+                            <a class="btn btn-ghost justify-start w-full text-left" href="{{route('modulos.proyectos.index')}}">
                                 @include('svg.chemical')
-                                Productos
+                                Proyectos de los semilleros
                             </a>
                         </li>
+                  
+
+
+
+
+
+                        <li><span class="menu-title">Gestion proyecto</span></li>
                         <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
-                                @include('svg.users')
-                                Trabajadores
+                            <a class="btn btn-ghost justify-start w-full text-left" href="{{route('modulos.integrantes.index')}}">
+                                 @include('svg.users')
+                                Integrantes de  proyecto
                             </a>
                         </li>
-                        <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
-                                @include('svg.Truck')
-                                Areas de produccion
+
+
+                               <li>
+                            <a class="btn btn-ghost justify-start w-full text-left" href="{{route('modulos.proyecto_pertenesco.index')}}">
+                                 @include('svg.users')
+                                Los proyectos a los que perteneces
                             </a>
                         </li>
-                        <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
-                                @include('svg.Truck')
-                                Unidades productivas
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
-                                @include('svg.users')
-                                Lider de una unidad productiva
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
-                                @include('svg.users')
-                                Gestores de areas productivas
-                            </a>
-                        </li>
-                        <li><span class="menu-title">Mercadeo</span></li>
-                        <li>
-                            <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
+
+
+                        
+
+                          <li>
+                            <a class="btn btn-ghost justify-start w-full text-left" href="{{route('modulos.trabajos.index')}}">
                                 @include('svg.chemical')
-                                Productos
+                                Trabajos de proyecto
                             </a>
                         </li>
+                
+
+                         <li><span class="menu-title">Eventos</span></li>
                         <li>
                             <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
+                                href="{{route('modulos.eventos.index')}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     class="size-5">
                                     <path
@@ -190,22 +181,26 @@
                                         d="M5.273 4.5a1.25 1.25 0 0 0-1.205.918l-1.523 5.52c-.006.02-.01.041-.015.062H6a1 1 0 0 1 .894.553l.448.894a1 1 0 0 0 .894.553h3.438a1 1 0 0 0 .86-.49l.606-1.02A1 1 0 0 1 14 11h3.47a1.318 1.318 0 0 0-.015-.062l-1.523-5.52a1.25 1.25 0 0 0-1.205-.918h-.977a.75.75 0 0 1 0-1.5h.977a2.75 2.75 0 0 1 2.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3.73c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 0 1 5.273 3h.977a.75.75 0 0 1 0 1.5h-.977Z" />
                                 </svg>
 
-                                Inventario de mercadeo
+                               Eventos
                             </a>
                         </li>
-                        <li>
+
+
+                          <li>
                             <a class="btn btn-ghost justify-start w-full text-left"
-                                href="">
+                                href="{{route('modulos.eventos.calendario')}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     class="size-5">
                                     <path
-                                        d="M2.879 7.121A3 3 0 0 0 7.5 6.66a2.997 2.997 0 0 0 2.5 1.34 2.997 2.997 0 0 0 2.5-1.34 3 3 0 1 0 4.622-3.78l-.293-.293A2 2 0 0 0 15.415 2H4.585a2 2 0 0 0-1.414.586l-.292.292a3 3 0 0 0 0 4.243ZM3 9.032a4.507 4.507 0 0 0 4.5-.29A4.48 4.48 0 0 0 10 9.5a4.48 4.48 0 0 0 2.5-.758 4.507 4.507 0 0 0 4.5.29V16.5h.25a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 0-.75-.75h-2.5a.75.75 0 0 0-.75.75v3.5a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1 0-1.5H3V9.032Z" />
+                                        d="M10 2a.75.75 0 0 1 .75.75v5.59l1.95-2.1a.75.75 0 1 1 1.1 1.02l-3.25 3.5a.75.75 0 0 1-1.1 0L6.2 7.26a.75.75 0 1 1 1.1-1.02l1.95 2.1V2.75A.75.75 0 0 1 10 2Z" />
+                                    <path
+                                        d="M5.273 4.5a1.25 1.25 0 0 0-1.205.918l-1.523 5.52c-.006.02-.01.041-.015.062H6a1 1 0 0 1 .894.553l.448.894a1 1 0 0 0 .894.553h3.438a1 1 0 0 0 .86-.49l.606-1.02A1 1 0 0 1 14 11h3.47a1.318 1.318 0 0 0-.015-.062l-1.523-5.52a1.25 1.25 0 0 0-1.205-.918h-.977a.75.75 0 0 1 0-1.5h.977a2.75 2.75 0 0 1 2.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3.73c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 0 1 5.273 3h.977a.75.75 0 0 1 0 1.5h-.977Z" />
                                 </svg>
 
-
-                                Ventas de mercadeo
+                               calendarios
                             </a>
                         </li>
+                      
 
                     </ul>
                 </div>
